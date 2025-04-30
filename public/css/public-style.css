@@ -1,0 +1,311 @@
+/* WhatsApp Chat Container */
+.wp-adv-whatsapp-chat-container {
+    position: fixed;
+    bottom: 90px;
+    width: 350px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    overflow: hidden;
+    display: none;
+    font-family: inherit;
+}
+
+/* Default position (bottom-right) */
+.wp-adv-whatsapp-chat-container {
+    right: 20px;
+}
+
+/* Header */
+.wp-adv-whatsapp-chat-header {
+    background-color: #007f69;
+    color: white;
+    padding: 20px 15px;
+    position: relative;
+}
+
+.wp-adv-whatsapp-chat-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.wp-adv-whatsapp-chat-close:hover {
+    opacity: 1;
+}
+
+.wp-adv-whatsapp-chat-profile {
+    display: flex;
+    align-items: center;
+}
+
+.wp-adv-whatsapp-chat-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.wp-adv-whatsapp-chat-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.wp-adv-whatsapp-online-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #4fce5d;
+    border-radius: 50%;
+    border: 2px solid #007f69;
+}
+
+.wp-adv-whatsapp-chat-profile-info {
+    flex: 1;
+}
+
+.wp-adv-whatsapp-chat-profile-info h4 {
+    margin: 0 0 2px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.wp-adv-whatsapp-status {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+    font-family: inherit;
+}
+
+/* Chat Body */
+/* Chat Body */
+.wp-adv-whatsapp-chat-body {
+    background: #e5ddd5;
+    background: url('../images/background.jpg') center center / cover no-repeat !important;
+    padding: 20px;
+    height: 250px;
+    overflow-y: auto;
+    position: relative;
+}
+
+
+.wp-adv-whatsapp-chat-timestamp {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin: 10px 0;
+    opacity: 0.7;
+    font-family: inherit;
+}
+
+.wp-adv-whatsapp-chat-message {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 7.5px 7.5px 7.5px 0;
+    display: inline-block;
+    max-width: 65%;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wp-adv-whatsapp-chat-message p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #303030;
+    font-family: inherit;
+}
+
+.wp-adv-whatsapp-chat-message p:last-child {
+    margin-bottom: 0;
+}
+
+/* Chat Footer - WhatsApp Style */
+.wp-adv-whatsapp-chat-footer {
+    padding: 10px;
+    background: #f0f0f0;
+    border-top: 1px solid #e2e2e2;
+}
+
+.wp-adv-whatsapp-chat-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.wp-adv-whatsapp-input-wrapper {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#wp-adv-whatsapp-chat-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 15px;
+    background: transparent;
+    font-family: inherit;
+}
+
+.wp-adv-whatsapp-send-btn {
+    background: #25d366;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+}
+
+.wp-adv-whatsapp-send-btn:hover {
+    background: #22bf5b;
+}
+
+.wp-adv-whatsapp-send-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* WhatsApp Bubble */
+.wp-adv-whatsapp-bubble {
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.wp-adv-whatsapp-bubble.bottom-right {
+    right: 20px;
+}
+
+.wp-adv-whatsapp-bubble.bottom-left {
+    left: 20px;
+}
+
+/* Chat window positioning based on button position */
+.wp-adv-whatsapp-bubble.bottom-right + .wp-adv-whatsapp-chat-container {
+    right: 20px;
+}
+
+.wp-adv-whatsapp-bubble.bottom-left + .wp-adv-whatsapp-chat-container {
+    left: 20px;
+}
+
+/* Rest of the bubble styles */
+.wp-adv-whatsapp-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 14px;
+}
+
+
+.wp-adv-whatsapp-button:hover {
+    transform: scale(1.05);
+    background: #22bf5b;
+}
+
+.wp-adv-whatsapp-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.wp-adv-whatsapp-notification-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #ff3b30;
+    border-radius: 50%;
+    border: 2px solid #25d366;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.wp-adv-whatsapp-button {
+    animation: pulse 2s infinite;
+}
+
+.wp-adv-whatsapp-bubble.active .wp-adv-whatsapp-button {
+    animation: none;
+}
+
+/* Responsive adjustments */
+
+/* Media queries for responsive design */
+@media screen and (max-width: 480px) {
+    .wp-adv-whatsapp-bubble.bottom-right {
+        right: 10px;
+    }
+    
+    .wp-adv-whatsapp-bubble.bottom-left {
+        left: 10px;
+    }
+    
+    .wp-adv-whatsapp-chat-container {
+        width: calc(100% - 40px);
+        max-width: 350px;
+        bottom: 80px;
+    }
+    
+    .wp-adv-whatsapp-bubble.bottom-right + .wp-adv-whatsapp-chat-container {
+        right: 10px;
+    }
+    
+    .wp-adv-whatsapp-bubble.bottom-left + .wp-adv-whatsapp-chat-container {
+        left: 10px;
+    }
+}

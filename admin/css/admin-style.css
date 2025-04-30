@@ -1,0 +1,60 @@
+.wp-adv-whatsapp-admin .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.wp-adv-whatsapp-admin .tab-content {
+    display: none;
+}
+
+.wp-adv-whatsapp-admin .tab-content.active {
+    display: block;
+}
+
+.wp-adv-whatsapp-admin .form-table th {
+    width: 200px;
+}
+
+.wp-adv-whatsapp-admin .image-preview-wrapper {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.wp-adv-whatsapp-admin .image-preview-wrapper img {
+    border: 1px solid #ddd;
+    padding: 3px;
+    background: #f9f9f9;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.wp-adv-whatsapp-admin .button-group {
+    margin-bottom: 10px;
+}
+
+.wp-adv-whatsapp-admin #upload_profile_image_button {
+    margin-right: 5px;
+}
+
+.wp-adv-whatsapp-admin #remove_profile_image_button {
+    color: #a00;
+}
+
+.wp-adv-whatsapp-admin #remove_profile_image_button:hover {
+    color: #dc3232;
+    border-color: #dc3232;
+}
+
+.wp-adv-whatsapp-admin .wp-editor-container {
+    border: 1px solid #ddd;
+}
+
+.wp-adv-whatsapp-admin .wp-picker-container {
+    display: inline-block;
+}
+
+.wp-adv-whatsapp-admin .wp-color-result {
+    margin-bottom: 0;
+}
