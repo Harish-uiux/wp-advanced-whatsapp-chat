@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WP Advanced WhatsApp Chat
- * Plugin URI: https://yourwebsite.com/wp-advanced-whatsapp-chat
+ * Plugin URI: https://www.pixelsmedialab.com/contact
  * Description: A professional, modular WhatsApp Chat Plugin for WordPress with advanced features, admin panel control, and elegant frontend with animation effects.
  * Version: 1.0.0
- * Author: Your Name
- * Author URI: https://yourwebsite.com
+ * Author: Hariharan Gandhimani
+ * Author URI:  https://www.pixelsmedialab.com/
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: wp-adv-whatsapp
